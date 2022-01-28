@@ -1,0 +1,221 @@
+<!DOCTYPE	html>
+<html lang="ko">
+	<head>
+		<title>시험인증 빅데이터 플랫폼</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">	
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/common.js"></script>
+		<script src="js/custom.js"></script>	
+	</head>
+	<body>
+		<!--wrap st-->
+		<div id="wrap">
+			<header>
+				<div class="headerframe">
+					<h1><a href="#a">시험인증<span>빅데이터 플랫폼</span></a></h1>
+					<nav>
+						<ul>
+							<li><a href="#a" title="인증정보조회">인증정보 조회</a></li>
+							<li><a href="#a" title="대시보드">대시보드</a></li>
+							<li><a href="#a" title="통계">통계</a></li>
+							<li><a href="#a" title="메타시스템">메타시스템</a></li>
+							<li class="active"><a href="#a" title="회원관리">회원관리</a></li>
+						</ul>				
+					</nav>
+					<div class="utill"><a href="#">LOGOUT</a></div>				
+				</div>
+			</header>
+			<!--container st-->
+			<div id="container">
+        <!--sub Visual st-->
+        <div class="subVisual">
+          <span>회원관리</span>
+        </div>
+        <!--//sub Visual ed-->       
+        <section>
+          <!--contentsInner st-->
+          <div class="contentsInner">
+            <!--search st-->
+            <div class="search_inner">            
+              <!--search fiels st-->
+              <div class="search_col">
+                <div class="row member">
+                  <div class="serch_title">이름</div>
+                  <div class="formfield">
+                    <input type="text">
+                  </div> 
+                </div>
+                <div class="row">
+                  <div class="serch_title">검색일 기준</div>
+                  <div class="disable">
+                    <input type="text" disabled value="가입일자">
+                  </div>
+                  <div class="formfield datebox">
+                    <em class="cal"><input type="text" class="datepicker"></em>
+                    <span class="blankTxt">~</span>
+                  </div> 
+                  <div class="formfield datebox lastbox">
+                    <em class="cal"><input type="text" class="datepicker"></em>
+                  </div>  
+                </div>                
+              </div>              
+              <!--//search fiels ed-->            
+              <!--search button st--> 
+              <div class="buttonframe">
+                <span><button class="button_type search">검색</button></span>              
+              </div>
+              <!--//search button ed-->         
+            </div>
+            <!--//search ed-->   
+            <!--list st-->
+            <div class="list_inner">
+              <table class="list_type">
+                <colgroup>
+                  <col width="6%">
+                  <col width="8%">
+                  <col width="7%">
+                  <col width="*">
+                  <col width="11%">
+                  <col width="13%">
+                  <col width="17%">
+                  <col width="10%">
+                  <col width="6%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>번호</th>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>기관명</th>
+                    <th>소속부서</th>
+                    <th>연락처</th>
+                    <th>이메일</th>
+                    <th>가입일자</th>
+                    <th>상태</th>                                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="center">7</td>
+                    <td>Hgd12345</td>
+                    <td class="center">홍길동</td>
+                    <td>한국의류시험연구원(KATRI)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>katri@katri.re.kr</td>
+                    <td class="center">2022.01.01</td>
+                    <td class="center">승인대기</td>
+                  </tr>
+                  <tr>
+                    <td class="center">6</td>
+                    <td>Ijj12345</td>
+                    <td class="center">이정재</td>
+                    <td>FITI시험연구원(FITI)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>fiti@fiti.re.kr</td>
+                    <td class="center">2022.01.03</td>
+                    <td class="center">승인완료</td>
+                  </tr>
+                  <tr>
+                    <td class="center">5</td>
+                    <td>Shk12345</td>
+                    <td class="center">송헤교</td>
+                    <td>KOTITI시험연구원(KOTITI)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>kotiti@kotiti-global.com</td>
+                    <td class="center">2022.01.01</td>
+                    <td class="center">승인완료</td>
+                  </tr>
+                  <tr>
+                    <td class="center">4</td>
+                    <td>Shk12345</td>
+                    <td class="center">송준기</td>
+                    <td>한국산업기술시험원(KTL)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>ktl@ktl.re.kr</td>
+                    <td class="center">2022.01.03</td>
+                    <td class="center">승인대기</td>
+                  </tr>
+                  <tr>
+                    <td class="center">3</td>
+                    <td>Jws12345</td>
+                    <td class="center">정우성</td>
+                    <td>한국화학융합시험연구원(KTR)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>ktr@ktr.or.kr</td>
+                    <td class="center">2022.01.01</td>
+                    <td class="center">승인완료</td>
+                  </tr>
+                  <tr>
+                    <td class="center">2</td>
+                    <td>Ajh12345</td>
+                    <td class="center">엄정화</td>
+                    <td>한국건설생활환경시험연구원(KCL)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>kcl@kcl.re.kr</td>
+                    <td class="center">2022.01.03</td>
+                    <td class="center">승인완료</td>
+                  </tr>
+                  <tr>
+                    <td class="center">1</td>
+                    <td>iuj12345</td>
+                    <td class="center">이유진</td>
+                    <td>한국기계전기전자시험연구원(KTC)</td>
+                    <td class="center">OOOO부서</td>
+                    <td class="center">010-1234-5678</td>
+                    <td>ktc@ktc.re.kr</td>
+                    <td class="center">2022.01.01</td>
+                    <td class="center">승인대기</td>
+                  </tr>              
+                </tbody>
+              </table>
+            </div>      
+            <!--//list ed-->            
+            <div class="paging-wrap">
+              <div class="paging network">
+                <a href="#" class="direction first">이전</a>
+                <a href="#" class="direction prev">pre</a>
+                <a href="#">1</a>
+                <a href="#" class="on">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="direction next">next</a>
+                <a href="#" class="direction last">다음</a>
+              </div>
+            </div>              
+          </div>
+          <!--//contentsInner ed-->         
+        </section>        
+			</div>
+			<!--//container ed-->
+			<footer>
+				<div class="inner">
+					<div class="foot_logo">시험인증<span>빅데이터 플랫폼</span></div>
+					<address>
+						<div>
+							서울특별시 동대문구 왕산로 51(용두동)<span>사업자등록번호 204-82-01330</span><span>TEL 02-3668-3000</span>FAX 02-3668-2900~1
+							<div class="coperation">COPYRIGHT 2022 KATRI. ALL RIGHTS RESERVED.</div>
+						</div>					
+					</address>					
+				</div>
+			</footer>
+		</div>
+		<!--//wrap ed-->    
+	</body>
+</html>
+

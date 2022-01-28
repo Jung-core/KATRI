@@ -1,0 +1,138 @@
+<!DOCTYPE	html>
+<html lang="ko">
+	<head>
+		<title>시험인증 빅데이터 플랫폼</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">	
+		<link rel="stylesheet" href="css/style.css">	
+		<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/common.js"></script>
+		<script src="js/custom.js"></script>	
+	</head>
+	<body>
+		<!--wrap st-->
+		<div id="wrap">
+			<header>
+				<div class="headerframe">
+					<h1><a href="#a">시험인증<span>빅데이터 플랫폼</span></a></h1>
+					<nav>
+						<ul>
+							<li><a href="#a" title="인증정보조회">인증정보 조회</a></li>
+							<li><a href="#a" title="대시보드">대시보드</a></li>
+							<li><a href="#a" title="통계">통계</a></li>
+							<li><a href="#a" title="메타시스템">메타시스템</a></li>
+							<li><a href="#a" title="회원관리">회원관리</a></li>
+						</ul>				
+					</nav>
+					<div class="utill"><a href="#">LOGOUT</a></div>				
+				</div>
+			</header>
+			<!--container st-->
+			<div id="container">
+        <!--sub Visual st-->
+				<div class="subVisual">
+					<span>회원가입</span>
+				</div>
+        <!--//sub Visual ed-->       
+        <section>
+          <!--contentsInner st-->
+          <div class="contentsInner">
+						<!--register st-->
+						<div class="register">
+							<div class="mem_copy">필수 입력사항입니다.</div>
+								<table class="register_type">
+									<colgroup>
+									<col width="14%">
+									<col width="*">								         
+									</colgroup>               
+									<tbody>
+										<tr>
+											<th><span>기관명</span></th>
+											<td>
+												<select name="" id="" style="width:340px;">
+													<option value="">선택</option>
+												</select>
+											</td>										                                             
+										</tr>  
+										<tr>
+											<th><span>소속부서</span></th>
+											<td><input type="text" placeholder="소속부서를 입력해주세요"></td>										                                            
+										</tr>    
+										<tr>
+											<th><span>아이디</span></th>
+											<td><input type="text" placeholder="영문+숫자 6~10자 이내"></td>										                                            
+										</tr>  
+										<tr>
+											<th><span>비밀번호</span></th>
+											<td><input type="text" placeholder="영문+숫자+특수문자(!@#$) 혼합하여 9~12자 이내"></td>										                                          
+										</tr>  
+										<tr>
+											<th><span>비밀번호 확인</span></th>
+											<td><input type="text" placeholder="영문+숫자+특수문자(!@#$) 혼합하여 9~12자 이내"></td>										                                          
+										</tr> 
+										<tr>
+											<th><span>이름</span></th>
+											<td><input type="text" placeholder="이름을 입력해주세요."></td>										                                            
+										</tr>  
+										<tr>
+											<th><span>이메일</span></th>
+											<td><input type="text" placeholder="이메일을 입력해주세요."></td>										                                          
+										</tr>  
+										<tr>
+											<th><span>휴대전화</span></th>
+											<td><input type="text" placeholder="-(하이픈) 없이 입력(예 : 01012345678)"></td>										                                          
+										</tr>              
+									</tbody>
+								</table>
+								<div class="buttonframe block t_c mt20">
+									<button class="button_type memberegister" id="submit">가입하기</button>
+								</div>
+						</div>
+						<!--register ed-->
+          </div>
+          <!--//contentsInner ed-->         
+        </section>        
+			</div>
+			<!--//container ed-->
+			<footer>
+				<div class="inner">
+					<div class="foot_logo">시험인증<span>빅데이터 플랫폼</span></div>
+					<address>
+						<div>
+							서울특별시 동대문구 왕산로 51(용두동)<span>사업자등록번호 204-82-01330</span><span>TEL 02-3668-3000</span>FAX 02-3668-2900~1
+							<div class="coperation">COPYRIGHT 2022 KATRI. ALL RIGHTS RESERVED.</div>
+						</div>					
+					</address>					
+				</div>
+			</footer>
+		</div>
+		<!--//wrap ed-->
+		<!-- popUpload-->
+		<div class="popup register_submit" id="register_submit">		
+			<div class="pop pop-con">
+					<a href="#a" class="close b-close">닫기</a>
+					<div class="inner">
+						<p><strong>회원가입이 완료되었습니다.</strong></p>
+						<p>승인까지 3일정도 소요됩니다.</p>
+						<p><span>OOOO@OOOO.kr</span>로 연락드리겠습니다.</p>
+						<p>(승인 관련 문의처 : 00-0000-0000)</p>
+						<button class="button_type submit mt31 b-close">확인</button>
+					</div>				
+			</div>
+		</div>
+		<!-- /popUpload-->
+		<script>
+			$(function() { 
+				$('#submit').bind('click', function(e) {
+					e.preventDefault();
+					$('#register_submit').bPopup({                  
+							onOpen: function() {$('body').addClass('scrolloff') },
+							onClose: function() {$('body').removeClass('scrolloff') },
+					}); 
+				});   					
+			});	
+		</script>
+	</body>
+</html>
+
